@@ -9,13 +9,18 @@ import UIKit
 import UtilitiesModule
 
 class ListingViewController: UIViewController, ModuleAViewProtocol {
-    var presenter: ModuleAPresenterProtocol?
-    @IBOutlet weak var tableView: UITableView!
-    var universities: [University] = []
     
+    @IBOutlet weak var tableView: UITableView!
+
+    @IBOutlet weak var tableViewContainer: RoundedShadowView!
+    @IBOutlet weak var errorView: UIView!
+
+    var universities: [University] = []
+    var presenter: ModuleAPresenterProtocol?
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter?.viewDidLoad()
+        presenter?.fetchUniversitiesData()
         tableView.register(UINib(nibName: Cells.tableViewCell, bundle: Bundle.moduleA), forCellReuseIdentifier: Cells.tableViewCell)
         tableView.tableFooterView = UIView(frame: .zero)
         tableView.rowHeight = UITableView.automaticDimension
@@ -26,7 +31,7 @@ class ListingViewController: UIViewController, ModuleAViewProtocol {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        presenter?.viewWillAppear()
+        presenter?.fetchUniversitiesData()
     }
 
     class func create() -> ListingViewController {
@@ -40,13 +45,17 @@ class ListingViewController: UIViewController, ModuleAViewProtocol {
     func showUniversities(_ universities: [University]) {
         DispatchQueue.main.async {
             self.universities = universities
-            self.tableView.isHidden = false
+            self.tableViewContainer.isHidden = false
+            self.errorView.isHidden = true
             self.tableView.reloadData()
         }
     }
 
     func showError(message: String) {
-        // Show error message
+        DispatchQueue.main.async {
+            self.errorView.isHidden = false
+            self.tableViewContainer.isHidden = true
+        }
     }
 
     func itemSelected(at index: Int) {

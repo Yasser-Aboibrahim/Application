@@ -13,33 +13,23 @@ protocol ModuleAPresenterProtocol: AnyObject {
     var interactor: ModuleAInteractorProtocol? {get set}
     var router: ModuleARouterProtocol? {get set}
     
-    func viewDidLoad()
-    func viewWillAppear()
     func itemSelected(at index: Int)
     func showUniversities(_ universities: [University])
     func showError(message: String)
-    func refreshButtonTapped()
+    func fetchUniversitiesData()
 }
 
 class ModuleAPresenter: ModuleAPresenterProtocol {
     var view: ModuleAViewProtocol?
     var interactor: ModuleAInteractorProtocol?
     var router: ModuleARouterProtocol?
-
-    func viewDidLoad() {
-        interactor?.fetchItems()
-    }
     
     func itemSelected(at index: Int) {
         guard let uni = interactor?.getItem(at: index) else { return }
         router?.navigateToDetailsScreen(with: uni)
     }
-    
-    func refreshButtonTapped() {
-        interactor?.fetchItems()
-    }
 
-    func viewWillAppear() {
+    func fetchUniversitiesData() {
         interactor?.fetchItems()
     }
 
@@ -49,9 +39,5 @@ class ModuleAPresenter: ModuleAPresenterProtocol {
 
     func showError(message: String) {
         view?.showError(message: message)
-    }
-
-    func getLatestUniversiteisUpdate() {
-        interactor?.fetchItems()
     }
 }

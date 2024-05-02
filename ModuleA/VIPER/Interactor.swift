@@ -32,10 +32,12 @@ class ModuleAInteractor: ModuleAInteractorProtocol {
                 self.dataManager.coreData.insert(universities: universities)
                 self.universities = universities
             case .failure(let error):
-                self.presenter?.showError(message: error.localizedDescription)
-                let universities = self.dataManager.coreData.fetchAllData() ?? []
-                self.presenter?.showUniversities(universities)
-                self.universities = universities
+                if let universities = self.dataManager.coreData.fetchAllData(), !universities.isEmpty  {
+                    self.presenter?.showUniversities(universities)
+                    self.universities = universities
+                } else {
+                    self.presenter?.showError(message: error.localizedDescription)
+                }
             }
         }
     }
