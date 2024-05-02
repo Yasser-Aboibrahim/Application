@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EF2B3E602BE2E1F200590216 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3E5F2BE2E1F200590216 /* AppDelegate.swift */; };
-		EF2B3E622BE2E1F200590216 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3E612BE2E1F200590216 /* SceneDelegate.swift */; };
-		EF2B3E642BE2E1F200590216 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3E632BE2E1F200590216 /* ViewController.swift */; };
 		EF2B3E672BE2E1F200590216 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF2B3E652BE2E1F200590216 /* Main.storyboard */; };
 		EF2B3E6A2BE2E1F200590216 /* Application.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3E682BE2E1F200590216 /* Application.xcdatamodeld */; };
 		EF2B3E6C2BE2E20000590216 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF2B3E6B2BE2E20000590216 /* Assets.xcassets */; };
@@ -29,6 +27,21 @@
 		EF2B3ECC2BE2E31A00590216 /* ModuleB.h in Headers */ = {isa = PBXBuildFile; fileRef = EF2B3EBC2BE2E31A00590216 /* ModuleB.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF2B3ECF2BE2E31A00590216 /* ModuleB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF2B3EBA2BE2E31900590216 /* ModuleB.framework */; };
 		EF2B3ED02BE2E31A00590216 /* ModuleB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF2B3EBA2BE2E31900590216 /* ModuleB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EF2B3ED92BE2E81A00590216 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3ED82BE2E81A00590216 /* View.swift */; };
+		EF2B3EDB2BE2E82A00590216 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3EDA2BE2E82A00590216 /* Interactor.swift */; };
+		EF2B3EDD2BE2E84000590216 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3EDC2BE2E84000590216 /* Presenter.swift */; };
+		EF2B3EDF2BE2E86B00590216 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3EDE2BE2E86B00590216 /* Router.swift */; };
+		EF2B3EE12BE2E91600590216 /* University.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3EE02BE2E91500590216 /* University.swift */; };
+		EF2B3EE32BE2EBFE00590216 /* ListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3EE22BE2EBFE00590216 /* ListingViewController.swift */; };
+		EF2B3EE52BE2EC0E00590216 /* ListingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF2B3EE42BE2EC0E00590216 /* ListingViewController.storyboard */; };
+		EF2B3EEC2BE2F36900590216 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF2B3EEA2BE2F36900590216 /* TableViewCell.xib */; };
+		EF2B3EEE2BE2F62B00590216 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3EED2BE2F62B00590216 /* TableViewCell.swift */; };
+		EF2B3EF02BE2F7AD00590216 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3EEF2BE2F7AD00590216 /* Constants.swift */; };
+		EF2B3EF32BE3005000590216 /* UniversityModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3EF12BE3004F00590216 /* UniversityModel.xcdatamodeld */; };
+		EF2B3EF52BE311EA00590216 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3EF42BE311EA00590216 /* CoreDataManager.swift */; };
+		EF2B3EFB2BE3176100590216 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3EFA2BE3176100590216 /* DataManager.swift */; };
+		EF2B3EFE2BE37D2100590216 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3EFD2BE37D2100590216 /* DetailsViewController.swift */; };
+		EF2B3F002BE37D2C00590216 /* DetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF2B3EFF2BE37D2C00590216 /* DetailsViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,8 +121,6 @@
 /* Begin PBXFileReference section */
 		EF2B3E5C2BE2E1F200590216 /* Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Application.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF2B3E5F2BE2E1F200590216 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EF2B3E612BE2E1F200590216 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EF2B3E632BE2E1F200590216 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EF2B3E662BE2E1F200590216 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF2B3E692BE2E1F200590216 /* Application.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Application.xcdatamodel; sourceTree = "<group>"; };
 		EF2B3E6B2BE2E20000590216 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -130,6 +141,21 @@
 		EF2B3EBD2BE2E31A00590216 /* ModuleB.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ModuleB.docc; sourceTree = "<group>"; };
 		EF2B3EC32BE2E31A00590216 /* ModuleBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModuleBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF2B3ECA2BE2E31A00590216 /* ModuleBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBTests.swift; sourceTree = "<group>"; };
+		EF2B3ED82BE2E81A00590216 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		EF2B3EDA2BE2E82A00590216 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		EF2B3EDC2BE2E84000590216 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		EF2B3EDE2BE2E86B00590216 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		EF2B3EE02BE2E91500590216 /* University.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = University.swift; sourceTree = "<group>"; };
+		EF2B3EE22BE2EBFE00590216 /* ListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewController.swift; sourceTree = "<group>"; };
+		EF2B3EE42BE2EC0E00590216 /* ListingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListingViewController.storyboard; sourceTree = "<group>"; };
+		EF2B3EEA2BE2F36900590216 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		EF2B3EED2BE2F62B00590216 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		EF2B3EEF2BE2F7AD00590216 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EF2B3EF22BE3005000590216 /* University.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = University.xcdatamodel; sourceTree = "<group>"; };
+		EF2B3EF42BE311EA00590216 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		EF2B3EFA2BE3176100590216 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		EF2B3EFD2BE37D2100590216 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		EF2B3EFF2BE37D2C00590216 /* DetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailsViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,8 +247,6 @@
 			isa = PBXGroup;
 			children = (
 				EF2B3E5F2BE2E1F200590216 /* AppDelegate.swift */,
-				EF2B3E612BE2E1F200590216 /* SceneDelegate.swift */,
-				EF2B3E632BE2E1F200590216 /* ViewController.swift */,
 				EF2B3E652BE2E1F200590216 /* Main.storyboard */,
 				EF2B3E6B2BE2E20000590216 /* Assets.xcassets */,
 				EF2B3E6D2BE2E20000590216 /* LaunchScreen.storyboard */,
@@ -254,6 +278,16 @@
 			children = (
 				EF2B3E992BE2E2F700590216 /* ModuleA.h */,
 				EF2B3E9A2BE2E2F700590216 /* ModuleA.docc */,
+				EF2B3ED82BE2E81A00590216 /* View.swift */,
+				EF2B3EDA2BE2E82A00590216 /* Interactor.swift */,
+				EF2B3EDC2BE2E84000590216 /* Presenter.swift */,
+				EF2B3EDE2BE2E86B00590216 /* Router.swift */,
+				EF2B3EE02BE2E91500590216 /* University.swift */,
+				EF2B3EEF2BE2F7AD00590216 /* Constants.swift */,
+				EF2B3EFA2BE3176100590216 /* DataManager.swift */,
+				EF2B3EF42BE311EA00590216 /* CoreDataManager.swift */,
+				EF2B3ED72BE2E79C00590216 /* ListingViewController */,
+				EF2B3EF12BE3004F00590216 /* UniversityModel.xcdatamodeld */,
 			);
 			path = ModuleA;
 			sourceTree = "<group>";
@@ -269,6 +303,7 @@
 		EF2B3EBB2BE2E31900590216 /* ModuleB */ = {
 			isa = PBXGroup;
 			children = (
+				EF2B3EFC2BE37CF400590216 /* DetailsViewController */,
 				EF2B3EBC2BE2E31A00590216 /* ModuleB.h */,
 				EF2B3EBD2BE2E31A00590216 /* ModuleB.docc */,
 			);
@@ -281,6 +316,34 @@
 				EF2B3ECA2BE2E31A00590216 /* ModuleBTests.swift */,
 			);
 			path = ModuleBTests;
+			sourceTree = "<group>";
+		};
+		EF2B3ED72BE2E79C00590216 /* ListingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EF2B3EE62BE2F31000590216 /* TableViewCell */,
+				EF2B3EE22BE2EBFE00590216 /* ListingViewController.swift */,
+				EF2B3EE42BE2EC0E00590216 /* ListingViewController.storyboard */,
+			);
+			path = ListingViewController;
+			sourceTree = "<group>";
+		};
+		EF2B3EE62BE2F31000590216 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				EF2B3EEA2BE2F36900590216 /* TableViewCell.xib */,
+				EF2B3EED2BE2F62B00590216 /* TableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		EF2B3EFC2BE37CF400590216 /* DetailsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EF2B3EFD2BE37D2100590216 /* DetailsViewController.swift */,
+				EF2B3EFF2BE37D2C00590216 /* DetailsViewController.storyboard */,
+			);
+			path = DetailsViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -525,6 +588,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF2B3EE52BE2EC0E00590216 /* ListingViewController.storyboard in Resources */,
+				EF2B3EEC2BE2F36900590216 /* TableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,6 +604,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF2B3F002BE37D2C00590216 /* DetailsViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,9 +623,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF2B3E6A2BE2E1F200590216 /* Application.xcdatamodeld in Sources */,
-				EF2B3E642BE2E1F200590216 /* ViewController.swift in Sources */,
 				EF2B3E602BE2E1F200590216 /* AppDelegate.swift in Sources */,
-				EF2B3E622BE2E1F200590216 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,7 +648,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF2B3EDB2BE2E82A00590216 /* Interactor.swift in Sources */,
+				EF2B3EFB2BE3176100590216 /* DataManager.swift in Sources */,
+				EF2B3EEE2BE2F62B00590216 /* TableViewCell.swift in Sources */,
+				EF2B3ED92BE2E81A00590216 /* View.swift in Sources */,
+				EF2B3EDF2BE2E86B00590216 /* Router.swift in Sources */,
+				EF2B3EDD2BE2E84000590216 /* Presenter.swift in Sources */,
+				EF2B3EE32BE2EBFE00590216 /* ListingViewController.swift in Sources */,
 				EF2B3E9B2BE2E2F700590216 /* ModuleA.docc in Sources */,
+				EF2B3EE12BE2E91600590216 /* University.swift in Sources */,
+				EF2B3EF02BE2F7AD00590216 /* Constants.swift in Sources */,
+				EF2B3EF32BE3005000590216 /* UniversityModel.xcdatamodeld in Sources */,
+				EF2B3EF52BE311EA00590216 /* CoreDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,6 +676,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF2B3EBE2BE2E31A00590216 /* ModuleB.docc in Sources */,
+				EF2B3EFE2BE37D2100590216 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -799,6 +875,7 @@
 		EF2B3E8A2BE2E20100590216 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -827,6 +904,7 @@
 		EF2B3E8B2BE2E20100590216 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -1217,6 +1295,16 @@
 			);
 			currentVersion = EF2B3E692BE2E1F200590216 /* Application.xcdatamodel */;
 			path = Application.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		EF2B3EF12BE3004F00590216 /* UniversityModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EF2B3EF22BE3005000590216 /* University.xcdatamodel */,
+			);
+			currentVersion = EF2B3EF22BE3005000590216 /* University.xcdatamodel */;
+			path = UniversityModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
