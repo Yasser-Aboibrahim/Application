@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF1A63222BE3B79800A98AE0 /* Bundle+ModuleA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1A63212BE3B79800A98AE0 /* Bundle+ModuleA.swift */; };
 		EF2B3E602BE2E1F200590216 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3E5F2BE2E1F200590216 /* AppDelegate.swift */; };
 		EF2B3E672BE2E1F200590216 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF2B3E652BE2E1F200590216 /* Main.storyboard */; };
 		EF2B3E6A2BE2E1F200590216 /* Application.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3E682BE2E1F200590216 /* Application.xcdatamodeld */; };
@@ -204,6 +205,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EF1A63212BE3B79800A98AE0 /* Bundle+ModuleA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+ModuleA.swift"; sourceTree = "<group>"; };
 		EF2B3E5C2BE2E1F200590216 /* Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Application.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF2B3E5F2BE2E1F200590216 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF2B3E662BE2E1F200590216 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -331,6 +333,103 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF1A631F2BE3B76400A98AE0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EF2B3EEF2BE2F7AD00590216 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EF1A63202BE3B77E00A98AE0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EF1A63212BE3B79800A98AE0 /* Bundle+ModuleA.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EF1A63242BE3B7BC00A98AE0 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				EF2B3EFA2BE3176100590216 /* DataManager.swift */,
+				EF2B3EF42BE311EA00590216 /* CoreDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		EF1A63252BE3B7CF00A98AE0 /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				EF2B3EDA2BE2E82A00590216 /* Interactor.swift */,
+				EF2B3EDC2BE2E84000590216 /* Presenter.swift */,
+				EF2B3EDE2BE2E86B00590216 /* Router.swift */,
+				EF1A63262BE3B7EA00A98AE0 /* View */,
+			);
+			path = VIPER;
+			sourceTree = "<group>";
+		};
+		EF1A63262BE3B7EA00A98AE0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF2B3ED82BE2E81A00590216 /* View.swift */,
+				EF2B3ED72BE2E79C00590216 /* ListingViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EF1A63272BE3B81500A98AE0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF2B3EE02BE2E91500590216 /* University.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF1A63282BE3B81F00A98AE0 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				EF2B3F3D2BE398A900590216 /* RoundedShadow.swift */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		EF1A63292BE3B83200A98AE0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EF2B3F432BE39FC700590216 /* UIViewController+TopViewController.swift */,
+				EF2B3F3B2BE3931C00590216 /* UIViewController+Create.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EF1A632A2BE3B84C00A98AE0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EF2B3F392BE392A200590216 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EF1A632B2BE3B85700A98AE0 /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				EF1A632C2BE3B86900A98AE0 /* View */,
+				EF2B3F072BE3868A00590216 /* Router.swift */,
+				EF2B3F052BE3867700590216 /* Presenter.swift */,
+			);
+			path = VIPER;
+			sourceTree = "<group>";
+		};
+		EF1A632C2BE3B86900A98AE0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF2B3F012BE3865A00590216 /* View.swift */,
+				EF2B3EFC2BE37CF400590216 /* DetailsViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		EF2B3E532BE2E1F200590216 = {
 			isa = PBXGroup;
 			children = (
@@ -397,16 +496,12 @@
 		EF2B3E982BE2E2F700590216 /* ModuleA */ = {
 			isa = PBXGroup;
 			children = (
+				EF1A63252BE3B7CF00A98AE0 /* VIPER */,
+				EF1A63242BE3B7BC00A98AE0 /* Managers */,
+				EF1A63202BE3B77E00A98AE0 /* Extensions */,
+				EF1A631F2BE3B76400A98AE0 /* Utilities */,
 				EF2B3E992BE2E2F700590216 /* ModuleA.h */,
 				EF2B3E9A2BE2E2F700590216 /* ModuleA.docc */,
-				EF2B3ED82BE2E81A00590216 /* View.swift */,
-				EF2B3EDA2BE2E82A00590216 /* Interactor.swift */,
-				EF2B3EDC2BE2E84000590216 /* Presenter.swift */,
-				EF2B3EDE2BE2E86B00590216 /* Router.swift */,
-				EF2B3EEF2BE2F7AD00590216 /* Constants.swift */,
-				EF2B3EFA2BE3176100590216 /* DataManager.swift */,
-				EF2B3EF42BE311EA00590216 /* CoreDataManager.swift */,
-				EF2B3ED72BE2E79C00590216 /* ListingViewController */,
 				EF2B3EF12BE3004F00590216 /* UniversityModel.xcdatamodeld */,
 			);
 			path = ModuleA;
@@ -423,13 +518,10 @@
 		EF2B3EBB2BE2E31900590216 /* ModuleB */ = {
 			isa = PBXGroup;
 			children = (
-				EF2B3F012BE3865A00590216 /* View.swift */,
-				EF2B3F052BE3867700590216 /* Presenter.swift */,
-				EF2B3F072BE3868A00590216 /* Router.swift */,
-				EF2B3EFC2BE37CF400590216 /* DetailsViewController */,
+				EF1A632B2BE3B85700A98AE0 /* VIPER */,
+				EF1A632A2BE3B84C00A98AE0 /* Utilities */,
 				EF2B3EBC2BE2E31A00590216 /* ModuleB.h */,
 				EF2B3EBD2BE2E31A00590216 /* ModuleB.docc */,
-				EF2B3F392BE392A200590216 /* Constants.swift */,
 			);
 			path = ModuleB;
 			sourceTree = "<group>";
@@ -473,12 +565,11 @@
 		EF2B3F0F2BE38F8300590216 /* UtilitiesModule */ = {
 			isa = PBXGroup;
 			children = (
-				EF2B3F3D2BE398A900590216 /* RoundedShadow.swift */,
-				EF2B3EE02BE2E91500590216 /* University.swift */,
-				EF2B3F3B2BE3931C00590216 /* UIViewController+Create.swift */,
+				EF1A63292BE3B83200A98AE0 /* Extensions */,
+				EF1A63282BE3B81F00A98AE0 /* CustomUI */,
+				EF1A63272BE3B81500A98AE0 /* Model */,
 				EF2B3F102BE38F8300590216 /* UtilitiesModule.h */,
 				EF2B3F112BE38F8300590216 /* UtilitiesModule.docc */,
-				EF2B3F432BE39FC700590216 /* UIViewController+TopViewController.swift */,
 			);
 			path = UtilitiesModule;
 			sourceTree = "<group>";
@@ -885,6 +976,7 @@
 				EF2B3EF02BE2F7AD00590216 /* Constants.swift in Sources */,
 				EF2B3EF32BE3005000590216 /* UniversityModel.xcdatamodeld in Sources */,
 				EF2B3EF52BE311EA00590216 /* CoreDataManager.swift in Sources */,
+				EF1A63222BE3B79800A98AE0 /* Bundle+ModuleA.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

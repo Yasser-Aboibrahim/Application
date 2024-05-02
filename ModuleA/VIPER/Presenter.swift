@@ -50,4 +50,8 @@ class ModuleAPresenter: ModuleAPresenterProtocol {
     func showError(message: String) {
         view?.showError(message: message)
     }
+
+    func getLatestUniversiteisUpdate() {
+        interactor?.fetchItems()
+    }
 }

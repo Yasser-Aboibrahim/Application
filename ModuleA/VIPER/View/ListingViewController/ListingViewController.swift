@@ -8,13 +8,6 @@
 import UIKit
 import UtilitiesModule
 
-extension Bundle {
-    private class ModuleAExample{}
-    internal class var moduleA: Bundle {
-        return Bundle(for: ModuleAExample.self)
-    }
-}
-
 class ListingViewController: UIViewController, ModuleAViewProtocol {
     var presenter: ModuleAPresenterProtocol?
     @IBOutlet weak var tableView: UITableView!
@@ -30,6 +23,7 @@ class ListingViewController: UIViewController, ModuleAViewProtocol {
         tableView.dataSource = self
         tableView.delegate = self
     }
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         presenter?.viewWillAppear()
