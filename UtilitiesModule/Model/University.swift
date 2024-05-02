@@ -33,7 +33,7 @@ public struct University: Codable {
         case alphaTwoCode = "alpha_two_code"
     }
 
-    var payloadDic: [String: Any] {
+    public var payloadDic: [String: Any] {
         var payloadDictionary: [String: Any] = [:]
         payloadDictionary[JSONBody.name.rawValue] = self.name
         payloadDictionary[JSONBody.stateProvince.rawValue] = stateProvince
@@ -44,7 +44,7 @@ public struct University: Codable {
         return payloadDictionary
     }
 
-    var data: Data? {
+    public var data: Data? {
         let jsonData = try? JSONSerialization.data(withJSONObject: payloadDic, options: .prettyPrinted)
         return jsonData
     }

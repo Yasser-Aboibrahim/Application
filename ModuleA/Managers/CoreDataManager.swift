@@ -41,8 +41,6 @@ class CoreDataManager {
     lazy var backgroundContext: NSManagedObjectContext = {
         let context: NSManagedObjectContext!
         context = self.persistentContainer.newBackgroundContext()
-        context?.automaticallyMergesChangesFromParent = true
-        context?.mergePolicy = NSMergePolicy.mergeByPropertyStoreTrump
         return context
     }()
 
@@ -64,58 +62,63 @@ class CoreDataManager {
     }
 
     func insert(universities: [University]) {
-        deleteAllData()
-        self.perform(onContext: self.backgroundContext) {
-            for university in universities {
-                let universityModel = UniversityModel(context: self.backgroundContext)
-                universityModel.payload = try? NSKeyedArchiver.archivedData(withRootObject: university, requiringSecureCoding: false)
-            }
-            
-            // Save changes in the background context
-            do {
-                try self.backgroundContext.save()
-            } catch {
-                print("Error saving background context: \(error.localizedDescription)")
-            }
-        } completion: { isSaved in
-            if isSaved {
-                print("Data have been saved successfully")
-            } else {
-                print("Data saving has failed")
-            }
-        }
-    }
-
-    func deleteAllData() {
-        let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "UniversityModel")
-
-        let batchDeleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
-
-        do {
-            try backgroundContext.execute(batchDeleteRequest)
-            try backgroundContext.save()
-        } catch {
-            print("Error deleting data: \(error.localizedDescription)")
-        }
-    }
-
-    func fetchAllData() -> [University]? {
-        var fetchedData: [University] = []
-        let fetchRequest: NSFetchRequest<UniversityModel> = UniversityModel.fetchRequest()
-
-        do {
-            let universities = try backgroundContext.fetch(fetchRequest)
-            for universityModel in universities {
-                if let universityData = universityModel.payload,
-                   let university = try? JSONDecoder().decode([University].self, from: universityData) {
-                    fetchedData = university
+            self.perform(onContext: self.backgroundContext) {
+                for university in universities {
+                    let universityModel = UniversityModel(context: self.backgroundContext)
+                    do {
+                        let jsonData = try JSONEncoder().encode(university)
+                        universityModel.payload = jsonData
+                    } catch {
+                        print("Error encoding university: \(error.localizedDescription)")
+                    }
+                }
+                
+                // Save changes in the background context
+                do {
+                    try self.backgroundContext.save()
+                } catch {
+                    print("Error saving background context: \(error.localizedDescription)")
+                }
+            } completion: { isSaved in
+                if isSaved {
+                    print("Data have been saved successfully")
+                } else {
+                    print("Data saving has failed")
                 }
             }
-        } catch {
-            print("Error fetching data: \(error.localizedDescription)")
-            return nil
         }
 
-        return fetchedData
+    func deleteAllUniversities() {
+        let fetchRequest: NSFetchRequest<UniversityModel> = UniversityModel.fetchRequest()
+        
+        do {
+            let universities = try backgroundContext.fetch(fetchRequest)
+            for university in universities {
+                backgroundContext.delete(university)
+            }
+            try backgroundContext.save()
+        } catch {
+            print("Error deleting all universities: \(error.localizedDescription)")
+        }
     }
+    
+    func getAllUniversities() -> [University] {
+            let fetchRequest: NSFetchRequest<UniversityModel> = UniversityModel.fetchRequest()
+            do {
+                let universityModels = try backgroundContext.fetch(fetchRequest)
+                return universityModels.compactMap { universityModel in
+                    guard let data = universityModel.payload as Data? else { return nil }
+                    do {
+                        return try JSONDecoder().decode(University.self, from: data)
+                    } catch {
+                        print("Error decoding university data: \(error.localizedDescription)")
+                        return nil
+                    }
+                }
+            } catch {
+                print("Error fetching universities: \(error.localizedDescription)")
+                return []
+            }
+        }
 }
+

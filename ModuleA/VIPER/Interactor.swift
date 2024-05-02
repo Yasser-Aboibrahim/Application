@@ -27,13 +27,14 @@ class ModuleAInteractor: ModuleAInteractorProtocol {
         dataManager.fetchItemsFromAPI { result in
             switch result {
             case .success(let universities):
-                self.dataManager.coreData.deleteAllData()
+                self.dataManager.coreData.deleteAllUniversities()
                 self.presenter?.showUniversities(universities)
                 self.dataManager.coreData.insert(universities: universities)
                 self.universities = universities
             case .failure(let error):
                 print("\(error.localizedDescription)")
-                if let universities = self.dataManager.coreData.fetchAllData(), !universities.isEmpty  {
+                let universities = self.dataManager.coreData.getAllUniversities()
+                if !universities.isEmpty  {
                     self.presenter?.showUniversities(universities)
                     self.universities = universities
                 } else {

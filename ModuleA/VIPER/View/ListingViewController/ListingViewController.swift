@@ -19,7 +19,6 @@ class ListingViewController: UIViewController, ModuleAViewProtocol {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter?.fetchUniversitiesData()
         tableView.register(UINib(nibName: Cells.tableViewCell, bundle: Bundle.moduleA), forCellReuseIdentifier: Cells.tableViewCell)
         tableView.tableFooterView = UIView(frame: .zero)
         tableView.rowHeight = UITableView.automaticDimension

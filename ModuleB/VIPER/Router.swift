@@ -28,6 +28,7 @@ public class ModuleBRouter: ModuleBRouterProtocol {
         presenter.router = self
         viewController = view
         guard let viewController = viewController else { return }
+        viewController.modalPresentationStyle = .fullScreen
         UIApplication.topViewController()?.present(viewController, animated: true, completion: nil)
     }
 
