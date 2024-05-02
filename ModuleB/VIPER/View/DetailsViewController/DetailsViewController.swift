@@ -8,13 +8,6 @@
 import UIKit
 import UtilitiesModule
 
-extension Bundle {
-    private class ModuleBExample{}
-    internal class var moduleB: Bundle {
-        return Bundle(for: ModuleBExample.self)
-    }
-}
-
 class DetailsViewController: UIViewController, ModuleBViewProtocol {
     var presenter: ModuleBPresenterProtocol?
     var university: University?
@@ -58,7 +51,7 @@ class DetailsViewController: UIViewController, ModuleBViewProtocol {
         }
         country.text = university.country
         code.text = university.alphaTwoCode
-        webPage.text = "\(university.webPages)"
+        webPage.text = "\(university.webPages.joined(separator: "\n"))"
     }
 
     @IBAction func refreshButtomPressed(_ sender: UIButton) {

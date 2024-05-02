@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EF1A63222BE3B79800A98AE0 /* Bundle+ModuleA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1A63212BE3B79800A98AE0 /* Bundle+ModuleA.swift */; };
+		EF1A632F2BE3D6FC00A98AE0 /* Bundle+ModuleB.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1A632E2BE3D6FC00A98AE0 /* Bundle+ModuleB.swift */; };
 		EF2B3E602BE2E1F200590216 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3E5F2BE2E1F200590216 /* AppDelegate.swift */; };
 		EF2B3E672BE2E1F200590216 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF2B3E652BE2E1F200590216 /* Main.storyboard */; };
 		EF2B3E6A2BE2E1F200590216 /* Application.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3E682BE2E1F200590216 /* Application.xcdatamodeld */; };
@@ -206,6 +207,7 @@
 
 /* Begin PBXFileReference section */
 		EF1A63212BE3B79800A98AE0 /* Bundle+ModuleA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+ModuleA.swift"; sourceTree = "<group>"; };
+		EF1A632E2BE3D6FC00A98AE0 /* Bundle+ModuleB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+ModuleB.swift"; sourceTree = "<group>"; };
 		EF2B3E5C2BE2E1F200590216 /* Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Application.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF2B3E5F2BE2E1F200590216 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF2B3E662BE2E1F200590216 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -414,9 +416,9 @@
 		EF1A632B2BE3B85700A98AE0 /* VIPER */ = {
 			isa = PBXGroup;
 			children = (
-				EF1A632C2BE3B86900A98AE0 /* View */,
 				EF2B3F072BE3868A00590216 /* Router.swift */,
 				EF2B3F052BE3867700590216 /* Presenter.swift */,
+				EF1A632C2BE3B86900A98AE0 /* View */,
 			);
 			path = VIPER;
 			sourceTree = "<group>";
@@ -428,6 +430,14 @@
 				EF2B3EFC2BE37CF400590216 /* DetailsViewController */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		EF1A632D2BE3D6E600A98AE0 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EF1A632E2BE3D6FC00A98AE0 /* Bundle+ModuleB.swift */,
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 		EF2B3E532BE2E1F200590216 = {
@@ -518,6 +528,7 @@
 		EF2B3EBB2BE2E31900590216 /* ModuleB */ = {
 			isa = PBXGroup;
 			children = (
+				EF1A632D2BE3D6E600A98AE0 /* extensions */,
 				EF1A632B2BE3B85700A98AE0 /* VIPER */,
 				EF1A632A2BE3B84C00A98AE0 /* Utilities */,
 				EF2B3EBC2BE2E31A00590216 /* ModuleB.h */,
@@ -998,6 +1009,7 @@
 				EF2B3F3A2BE392A200590216 /* Constants.swift in Sources */,
 				EF2B3F082BE3868A00590216 /* Router.swift in Sources */,
 				EF2B3F062BE3867700590216 /* Presenter.swift in Sources */,
+				EF1A632F2BE3D6FC00A98AE0 /* Bundle+ModuleB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
