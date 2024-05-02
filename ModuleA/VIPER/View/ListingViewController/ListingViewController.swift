@@ -23,7 +23,6 @@ class ListingViewController: UIViewController, ModuleAViewProtocol {
         tableView.register(UINib(nibName: Cells.tableViewCell, bundle: Bundle.moduleA), forCellReuseIdentifier: Cells.tableViewCell)
         tableView.tableFooterView = UIView(frame: .zero)
         tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = 217
         tableView.dataSource = self
         tableView.delegate = self
     }
