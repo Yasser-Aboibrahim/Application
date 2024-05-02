@@ -6,24 +6,62 @@
 //
 
 import UIKit
+import UtilitiesModule
 
-class DetailsViewController: UIViewController {
+extension Bundle {
+    private class ModuleBExample{}
+    internal class var moduleB: Bundle {
+        return Bundle(for: ModuleBExample.self)
+    }
+}
 
+class DetailsViewController: UIViewController, ModuleBViewProtocol {
+    var presenter: ModuleBPresenterProtocol?
+    var university: University?
+
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var state: UILabel!
+    @IBOutlet weak var country: UILabel!
+    @IBOutlet weak var code: UILabel!
+    @IBOutlet weak var webPage: UILabel!
+    @IBOutlet weak var stateLabelHeight: NSLayoutConstraint!
+    
+    @IBOutlet weak var codeToStateConstraint: NSLayoutConstraint!
+    @IBOutlet weak var countryToStateConstaint: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        presenter?.viewDidLoad()
+        name.translatesAutoresizingMaskIntoConstraints = false
+        name.numberOfLines = 0
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    class func create(university: University?) -> DetailsViewController {
+        let detailsViewController = DetailsViewController.create(
+            storyboardName: Storyboards.detailsViewController,
+            identifier: ViewControllers.detailsViewController,
+            bundle: Bundle.moduleB
+        ) as! DetailsViewController
+        detailsViewController.university = university
+        return detailsViewController
     }
-    */
 
+    func showItemDetails(_ university: University) {
+        self.university = university
+        name.text = university.name
+        if state == nil {
+            stateLabelHeight.constant = 0
+            countryToStateConstaint.constant = 0
+            codeToStateConstraint.constant = 0
+        } else {
+            state.text = university.stateProvince
+        }
+        country.text = university.country
+        code.text = university.alphaTwoCode
+        webPage.text = "\(university.webPages)"
+    }
+
+    @IBAction func refreshButtomPressed(_ sender: UIButton) {
+        presenter?.dismissDetailsScreeen()
+    }
 }
+

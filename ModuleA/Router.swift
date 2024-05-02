@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import UtilitiesModule
+import ModuleB
 
 protocol ModuleARouterProtocol: AnyObject {
     func navigateToDetailsScreen(with university: University)
@@ -30,6 +32,7 @@ public class ModuleARouter: ModuleARouterProtocol {
     }
 
     func navigateToDetailsScreen(with university: University) {
-        // Navigate to Module B Details Screen passing the item
+        let router: ModuleBRouterProtocol  = ModuleBRouter()
+        router.showDetailsScreen(university: university)
     }
 }

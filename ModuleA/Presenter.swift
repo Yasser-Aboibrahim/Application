@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UtilitiesModule
 
 protocol ModuleAPresenterProtocol: AnyObject {
     var view: ModuleAViewProtocol? {get set}
@@ -24,7 +25,7 @@ class ModuleAPresenter: ModuleAPresenterProtocol {
     var view: ModuleAViewProtocol?
     var interactor: ModuleAInteractorProtocol?
     var router: ModuleARouterProtocol?
-    
+
     func viewDidLoad() {
         interactor?.fetchItems()
     }

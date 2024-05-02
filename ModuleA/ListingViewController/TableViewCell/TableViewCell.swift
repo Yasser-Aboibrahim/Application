@@ -14,6 +14,12 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var stateHeight: NSLayoutConstraint!
     @IBOutlet weak var stateConstraintsToBottom: NSLayoutConstraint!
 
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        name.translatesAutoresizingMaskIntoConstraints = false
+        name.numberOfLines = 0
+    }
+
     func cellConfigure(name: String, state: String?) {
         self.name.text = name
         if state == nil {

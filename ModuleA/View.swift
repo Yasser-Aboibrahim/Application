@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UtilitiesModule
 
 protocol ModuleAViewProtocol: AnyObject {
     var presenter: ModuleAPresenterProtocol? {get set}

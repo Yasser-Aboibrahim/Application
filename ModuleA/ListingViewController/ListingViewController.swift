@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import UtilitiesModule
 
 extension Bundle {
     private class ModuleAExample{}
@@ -14,17 +15,9 @@ extension Bundle {
     }
 }
 
-extension UIViewController {
-    class func create<T: UIViewController>(storyboardName: String, identifier: String, bundle: Bundle? = nil) -> T {
-        let storyboard = UIStoryboard(name: storyboardName, bundle: bundle)
-        return storyboard.instantiateViewController(withIdentifier: identifier) as! T
-    }
-}
-
 class ListingViewController: UIViewController, ModuleAViewProtocol {
     var presenter: ModuleAPresenterProtocol?
     @IBOutlet weak var tableView: UITableView!
-
     var universities: [University] = []
     
     override func viewDidLoad() {
@@ -37,9 +30,16 @@ class ListingViewController: UIViewController, ModuleAViewProtocol {
         tableView.dataSource = self
         tableView.delegate = self
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        presenter?.viewWillAppear()
+    }
 
     class func create() -> ListingViewController {
-        let listingViewController: ListingViewController = UIStoryboard(name: Storyboards.listingViewController, bundle: Bundle.moduleA).instantiateViewController(withIdentifier: ViewControllers.listingViewController) as! ListingViewController
+        let listingViewController = ListingViewController.create(
+            storyboardName: Storyboards.listingViewController,
+            identifier: ViewControllers.listingViewController,
+            bundle: Bundle.moduleA) as! ListingViewController
         return listingViewController
     }
 
@@ -54,15 +54,9 @@ class ListingViewController: UIViewController, ModuleAViewProtocol {
     func showError(message: String) {
         // Show error message
     }
-    
-    // Function to handle item selection
+
     func itemSelected(at index: Int) {
         presenter?.itemSelected(at: index)
-    }
-    
-    // Function to handle refresh button tap
-    @IBAction func refreshButtonTapped(_ sender: UIButton) {
-        presenter?.refreshButtonTapped()
     }
 }
 

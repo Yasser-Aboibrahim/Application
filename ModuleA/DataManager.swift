@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UtilitiesModule
 
 class DataManager: ModuleADataManagerProtocol {
     var coreData = CoreDataManager()

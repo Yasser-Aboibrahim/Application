@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UtilitiesModule
 
 protocol ModuleADataManagerProtocol {
     func fetchItemsFromAPI(completion: @escaping (Result<[University], Error>) -> Void)
@@ -14,13 +15,13 @@ protocol ModuleADataManagerProtocol {
 protocol ModuleAInteractorProtocol: AnyObject {
     var presenter: ModuleAPresenterProtocol? {get set}
     func fetchItems()
-    func getItem(at index: Int) -> University
+    func getItem(at index: Int) -> University?
 }
 
 class ModuleAInteractor: ModuleAInteractorProtocol {
     weak var presenter: ModuleAPresenterProtocol?
     var dataManager = DataManager()
-
+    var universities: [University] = []
 
     func fetchItems() {
         dataManager.fetchItemsFromAPI { result in
@@ -29,15 +30,17 @@ class ModuleAInteractor: ModuleAInteractorProtocol {
                 self.dataManager.coreData.deleteAllData()
                 self.presenter?.showUniversities(universities)
                 self.dataManager.coreData.insert(universities: universities)
+                self.universities = universities
             case .failure(let error):
                 self.presenter?.showError(message: error.localizedDescription)
-                self.presenter?.showUniversities(self.dataManager.coreData.fetchAllData() ?? [])
+                let universities = self.dataManager.coreData.fetchAllData() ?? []
+                self.presenter?.showUniversities(universities)
+                self.universities = universities
             }
         }
     }
     
-    func getItem(at index: Int) -> University {
-        // Fetch item from local DB
-        return University(name: "", stateProvince: "", domains: [""], webPages: [""], country: "", alphaTwoCode: "")
+    func getItem(at index: Int) -> University? {
+        return universities[index]
     }
 }

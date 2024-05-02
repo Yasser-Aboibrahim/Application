@@ -7,15 +7,15 @@
 
 import Foundation
 
-struct University: Codable {
-    let name: String
-    let stateProvince: String?
-    let domains: [String]
-    let webPages: [String]
-    let country: String
-    let alphaTwoCode: String
+public struct University: Codable {
+    public let name: String
+    public let stateProvince: String?
+    public let domains: [String]
+    public let webPages: [String]
+    public let country: String
+    public let alphaTwoCode: String
 
-    enum CodingKeys: String, CodingKey {
+    public enum CodingKeys: String, CodingKey {
         case name
         case stateProvince = "state-province"
         case domains
@@ -24,7 +24,16 @@ struct University: Codable {
         case alphaTwoCode = "alpha_two_code"
     }
 
-    private var payloadDic: [String: Any] {
+    enum JSONBody: String {
+        case name = "name"
+        case stateProvince = "state-province"
+        case domains = "domains"
+        case webPages = "web_pages"
+        case country = "country"
+        case alphaTwoCode = "alpha_two_code"
+    }
+
+    var payloadDic: [String: Any] {
         var payloadDictionary: [String: Any] = [:]
         payloadDictionary[JSONBody.name.rawValue] = self.name
         payloadDictionary[JSONBody.stateProvince.rawValue] = stateProvince

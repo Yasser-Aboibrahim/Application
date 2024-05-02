@@ -7,54 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "12A4398D-6563-4B76-AED8-4C1CC8F902A4"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ModuleA/CoreDataManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "perform(onContext:handler:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "10C3BCC8-168B-46AB-958B-A43C776D0CB3"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ModuleA/ListingViewController/ListingViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "showUniversities(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "410B0B4E-1FEA-45A2-A0CB-5956F450C332"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ModuleA/Presenter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "showUniversities(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "CC4DDBF0-633E-4038-875D-2F5EE1515675"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -62,13 +14,13 @@
             filePath = "ModuleA/CoreDataManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
             landmarkName = "fetchAllData()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "CC4DDBF0-633E-4038-875D-2F5EE1515675 - c4a651f21b897a68"
+                  uuid = "CC4DDBF0-633E-4038-875D-2F5EE1515675 - c4a651f21b897a37"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -78,23 +30,23 @@
                   urlString = "file:///Users/yasser_aboibraim/Documents/iOS/iOS%20Projects/TaskAssignment/Application/ModuleA/CoreDataManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "113"
-                  endingLineNumber = "113"
-                  offsetFromSymbolStart = "1428">
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
+                  offsetFromSymbolStart = "2228">
                </Location>
                <Location
-                  uuid = "CC4DDBF0-633E-4038-875D-2F5EE1515675 - c4a651f21b897a68"
+                  uuid = "CC4DDBF0-633E-4038-875D-2F5EE1515675 - f521ee1a6d237ad0"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "ModuleA.CoreDataManager.fetchAllData() -&gt; Swift.Optional&lt;Swift.Array&lt;ModuleA.University&gt;&gt;"
+                  symbolName = "ModuleA.CoreDataManager.fetchAllData() -&gt; Swift.Optional&lt;Swift.Array&lt;UtilitiesModule.University&gt;&gt;"
                   moduleName = "ModuleA"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yasser_aboibraim/Documents/iOS/iOS%20Projects/TaskAssignment/Application/ModuleA/CoreDataManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "113"
-                  endingLineNumber = "113"
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
                   offsetFromSymbolStart = "1536">
                </Location>
             </Locations>
@@ -110,13 +62,13 @@
             filePath = "ModuleA/CoreDataManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
             landmarkName = "fetchAllData()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "45682C55-9F79-4865-A0C8-D609D989E2F1 - c4a651f21b897aec"
+                  uuid = "45682C55-9F79-4865-A0C8-D609D989E2F1 - c4a651f21b897a8b"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -126,38 +78,23 @@
                   urlString = "file:///Users/yasser_aboibraim/Documents/iOS/iOS%20Projects/TaskAssignment/Application/ModuleA/CoreDataManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "109"
-                  endingLineNumber = "109"
-                  offsetFromSymbolStart = "848">
+                  startingLineNumber = "110"
+                  endingLineNumber = "110"
+                  offsetFromSymbolStart = "1192">
                </Location>
                <Location
-                  uuid = "45682C55-9F79-4865-A0C8-D609D989E2F1 - c4a651f21b897aec"
+                  uuid = "45682C55-9F79-4865-A0C8-D609D989E2F1 - f521ee1a6d237a6c"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "ModuleA.CoreDataManager.fetchAllData() -&gt; Swift.Optional&lt;Swift.Array&lt;ModuleA.University&gt;&gt;"
+                  symbolName = "ModuleA.CoreDataManager.fetchAllData() -&gt; Swift.Optional&lt;Swift.Array&lt;UtilitiesModule.University&gt;&gt;"
                   moduleName = "ModuleA"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yasser_aboibraim/Documents/iOS/iOS%20Projects/TaskAssignment/Application/ModuleA/CoreDataManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "109"
-                  endingLineNumber = "109"
-                  offsetFromSymbolStart = "1148">
-               </Location>
-               <Location
-                  uuid = "45682C55-9F79-4865-A0C8-D609D989E2F1 - c4a651f21b897aec"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ModuleA.CoreDataManager.fetchAllData() -&gt; Swift.Optional&lt;Swift.Array&lt;ModuleA.University&gt;&gt;"
-                  moduleName = "ModuleA"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yasser_aboibraim/Documents/iOS/iOS%20Projects/TaskAssignment/Application/ModuleA/CoreDataManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "109"
-                  endingLineNumber = "109"
+                  startingLineNumber = "110"
+                  endingLineNumber = "110"
                   offsetFromSymbolStart = "1160">
                </Location>
             </Locations>

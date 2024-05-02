@@ -31,7 +31,6 @@
 		EF2B3EDB2BE2E82A00590216 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3EDA2BE2E82A00590216 /* Interactor.swift */; };
 		EF2B3EDD2BE2E84000590216 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3EDC2BE2E84000590216 /* Presenter.swift */; };
 		EF2B3EDF2BE2E86B00590216 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3EDE2BE2E86B00590216 /* Router.swift */; };
-		EF2B3EE12BE2E91600590216 /* University.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3EE02BE2E91500590216 /* University.swift */; };
 		EF2B3EE32BE2EBFE00590216 /* ListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3EE22BE2EBFE00590216 /* ListingViewController.swift */; };
 		EF2B3EE52BE2EC0E00590216 /* ListingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF2B3EE42BE2EC0E00590216 /* ListingViewController.storyboard */; };
 		EF2B3EEC2BE2F36900590216 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF2B3EEA2BE2F36900590216 /* TableViewCell.xib */; };
@@ -42,6 +41,26 @@
 		EF2B3EFB2BE3176100590216 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3EFA2BE3176100590216 /* DataManager.swift */; };
 		EF2B3EFE2BE37D2100590216 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3EFD2BE37D2100590216 /* DetailsViewController.swift */; };
 		EF2B3F002BE37D2C00590216 /* DetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF2B3EFF2BE37D2C00590216 /* DetailsViewController.storyboard */; };
+		EF2B3F022BE3865A00590216 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3F012BE3865A00590216 /* View.swift */; };
+		EF2B3F062BE3867700590216 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3F052BE3867700590216 /* Presenter.swift */; };
+		EF2B3F082BE3868A00590216 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3F072BE3868A00590216 /* Router.swift */; };
+		EF2B3F122BE38F8300590216 /* UtilitiesModule.docc in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3F112BE38F8300590216 /* UtilitiesModule.docc */; };
+		EF2B3F182BE38F8400590216 /* UtilitiesModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF2B3F0E2BE38F8300590216 /* UtilitiesModule.framework */; };
+		EF2B3F1F2BE38F8400590216 /* UtilitiesModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3F1E2BE38F8400590216 /* UtilitiesModuleTests.swift */; };
+		EF2B3F202BE38F8400590216 /* UtilitiesModule.h in Headers */ = {isa = PBXBuildFile; fileRef = EF2B3F102BE38F8300590216 /* UtilitiesModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF2B3F232BE38F8400590216 /* UtilitiesModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF2B3F0E2BE38F8300590216 /* UtilitiesModule.framework */; };
+		EF2B3F242BE38F8400590216 /* UtilitiesModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF2B3F0E2BE38F8300590216 /* UtilitiesModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EF2B3F2D2BE38FE800590216 /* UtilitiesModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF2B3F0E2BE38F8300590216 /* UtilitiesModule.framework */; };
+		EF2B3F2E2BE38FE800590216 /* UtilitiesModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF2B3F0E2BE38F8300590216 /* UtilitiesModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EF2B3F322BE38FEB00590216 /* UtilitiesModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF2B3F0E2BE38F8300590216 /* UtilitiesModule.framework */; };
+		EF2B3F332BE38FEB00590216 /* UtilitiesModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF2B3F0E2BE38F8300590216 /* UtilitiesModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EF2B3F382BE390A900590216 /* University.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3EE02BE2E91500590216 /* University.swift */; };
+		EF2B3F3A2BE392A200590216 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3F392BE392A200590216 /* Constants.swift */; };
+		EF2B3F3C2BE3931C00590216 /* UIViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3F3B2BE3931C00590216 /* UIViewController+Create.swift */; };
+		EF2B3F3E2BE398A900590216 /* RoundedShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3F3D2BE398A900590216 /* RoundedShadow.swift */; };
+		EF2B3F3F2BE39E9F00590216 /* ModuleB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF2B3EBA2BE2E31900590216 /* ModuleB.framework */; };
+		EF2B3F402BE39E9F00590216 /* ModuleB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF2B3EBA2BE2E31900590216 /* ModuleB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EF2B3F442BE39FC700590216 /* UIViewController+TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3F432BE39FC700590216 /* UIViewController+TopViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +120,48 @@
 			remoteGlobalIDString = EF2B3EB92BE2E31900590216;
 			remoteInfo = ModuleB;
 		};
+		EF2B3F192BE38F8400590216 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF2B3E542BE2E1F200590216 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF2B3F0D2BE38F8300590216;
+			remoteInfo = UtilitiesModule;
+		};
+		EF2B3F1B2BE38F8400590216 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF2B3E542BE2E1F200590216 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF2B3E5B2BE2E1F200590216;
+			remoteInfo = Application;
+		};
+		EF2B3F212BE38F8400590216 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF2B3E542BE2E1F200590216 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF2B3F0D2BE38F8300590216;
+			remoteInfo = UtilitiesModule;
+		};
+		EF2B3F2F2BE38FE800590216 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF2B3E542BE2E1F200590216 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF2B3F0D2BE38F8300590216;
+			remoteInfo = UtilitiesModule;
+		};
+		EF2B3F342BE38FEB00590216 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF2B3E542BE2E1F200590216 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF2B3F0D2BE38F8300590216;
+			remoteInfo = UtilitiesModule;
+		};
+		EF2B3F412BE39E9F00590216 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF2B3E542BE2E1F200590216 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF2B3EB92BE2E31900590216;
+			remoteInfo = ModuleB;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -111,7 +172,31 @@
 			dstSubfolderSpec = 10;
 			files = (
 				EF2B3EAD2BE2E2F800590216 /* ModuleA.framework in Embed Frameworks */,
+				EF2B3F242BE38F8400590216 /* UtilitiesModule.framework in Embed Frameworks */,
 				EF2B3ED02BE2E31A00590216 /* ModuleB.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF2B3F312BE38FE800590216 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EF2B3F2E2BE38FE800590216 /* UtilitiesModule.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF2B3F362BE38FEB00590216 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EF2B3F332BE38FEB00590216 /* UtilitiesModule.framework in Embed Frameworks */,
+				EF2B3F402BE39E9F00590216 /* ModuleB.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,6 +241,18 @@
 		EF2B3EFA2BE3176100590216 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		EF2B3EFD2BE37D2100590216 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		EF2B3EFF2BE37D2C00590216 /* DetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailsViewController.storyboard; sourceTree = "<group>"; };
+		EF2B3F012BE3865A00590216 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		EF2B3F052BE3867700590216 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		EF2B3F072BE3868A00590216 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		EF2B3F0E2BE38F8300590216 /* UtilitiesModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UtilitiesModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF2B3F102BE38F8300590216 /* UtilitiesModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilitiesModule.h; sourceTree = "<group>"; };
+		EF2B3F112BE38F8300590216 /* UtilitiesModule.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = UtilitiesModule.docc; sourceTree = "<group>"; };
+		EF2B3F172BE38F8400590216 /* UtilitiesModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UtilitiesModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF2B3F1E2BE38F8400590216 /* UtilitiesModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesModuleTests.swift; sourceTree = "<group>"; };
+		EF2B3F392BE392A200590216 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EF2B3F3B2BE3931C00590216 /* UIViewController+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Create.swift"; sourceTree = "<group>"; };
+		EF2B3F3D2BE398A900590216 /* RoundedShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadow.swift; sourceTree = "<group>"; };
+		EF2B3F432BE39FC700590216 /* UIViewController+TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+TopViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF2B3EAC2BE2E2F800590216 /* ModuleA.framework in Frameworks */,
+				EF2B3F232BE38F8400590216 /* UtilitiesModule.framework in Frameworks */,
 				EF2B3ECF2BE2E31A00590216 /* ModuleB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,6 +284,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF2B3F322BE38FEB00590216 /* UtilitiesModule.framework in Frameworks */,
+				EF2B3F3F2BE39E9F00590216 /* ModuleB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +301,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF2B3F2D2BE38FE800590216 /* UtilitiesModule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +310,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF2B3EC42BE2E31A00590216 /* ModuleB.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF2B3F0B2BE38F8300590216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF2B3F142BE38F8400590216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF2B3F182BE38F8400590216 /* UtilitiesModule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,7 +341,10 @@
 				EF2B3EA62BE2E2F800590216 /* ModuleATests */,
 				EF2B3EBB2BE2E31900590216 /* ModuleB */,
 				EF2B3EC92BE2E31A00590216 /* ModuleBTests */,
+				EF2B3F0F2BE38F8300590216 /* UtilitiesModule */,
+				EF2B3F1D2BE38F8400590216 /* UtilitiesModuleTests */,
 				EF2B3E5D2BE2E1F200590216 /* Products */,
+				EF2B3F2C2BE38FE800590216 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -239,6 +358,8 @@
 				EF2B3EA02BE2E2F800590216 /* ModuleATests.xctest */,
 				EF2B3EBA2BE2E31900590216 /* ModuleB.framework */,
 				EF2B3EC32BE2E31A00590216 /* ModuleBTests.xctest */,
+				EF2B3F0E2BE38F8300590216 /* UtilitiesModule.framework */,
+				EF2B3F172BE38F8400590216 /* UtilitiesModuleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -282,7 +403,6 @@
 				EF2B3EDA2BE2E82A00590216 /* Interactor.swift */,
 				EF2B3EDC2BE2E84000590216 /* Presenter.swift */,
 				EF2B3EDE2BE2E86B00590216 /* Router.swift */,
-				EF2B3EE02BE2E91500590216 /* University.swift */,
 				EF2B3EEF2BE2F7AD00590216 /* Constants.swift */,
 				EF2B3EFA2BE3176100590216 /* DataManager.swift */,
 				EF2B3EF42BE311EA00590216 /* CoreDataManager.swift */,
@@ -303,9 +423,13 @@
 		EF2B3EBB2BE2E31900590216 /* ModuleB */ = {
 			isa = PBXGroup;
 			children = (
+				EF2B3F012BE3865A00590216 /* View.swift */,
+				EF2B3F052BE3867700590216 /* Presenter.swift */,
+				EF2B3F072BE3868A00590216 /* Router.swift */,
 				EF2B3EFC2BE37CF400590216 /* DetailsViewController */,
 				EF2B3EBC2BE2E31A00590216 /* ModuleB.h */,
 				EF2B3EBD2BE2E31A00590216 /* ModuleB.docc */,
+				EF2B3F392BE392A200590216 /* Constants.swift */,
 			);
 			path = ModuleB;
 			sourceTree = "<group>";
@@ -346,6 +470,34 @@
 			path = DetailsViewController;
 			sourceTree = "<group>";
 		};
+		EF2B3F0F2BE38F8300590216 /* UtilitiesModule */ = {
+			isa = PBXGroup;
+			children = (
+				EF2B3F3D2BE398A900590216 /* RoundedShadow.swift */,
+				EF2B3EE02BE2E91500590216 /* University.swift */,
+				EF2B3F3B2BE3931C00590216 /* UIViewController+Create.swift */,
+				EF2B3F102BE38F8300590216 /* UtilitiesModule.h */,
+				EF2B3F112BE38F8300590216 /* UtilitiesModule.docc */,
+				EF2B3F432BE39FC700590216 /* UIViewController+TopViewController.swift */,
+			);
+			path = UtilitiesModule;
+			sourceTree = "<group>";
+		};
+		EF2B3F1D2BE38F8400590216 /* UtilitiesModuleTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF2B3F1E2BE38F8400590216 /* UtilitiesModuleTests.swift */,
+			);
+			path = UtilitiesModuleTests;
+			sourceTree = "<group>";
+		};
+		EF2B3F2C2BE38FE800590216 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -362,6 +514,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF2B3ECC2BE2E31A00590216 /* ModuleB.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF2B3F092BE38F8300590216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF2B3F202BE38F8400590216 /* UtilitiesModule.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +542,7 @@
 			dependencies = (
 				EF2B3EAB2BE2E2F800590216 /* PBXTargetDependency */,
 				EF2B3ECE2BE2E31A00590216 /* PBXTargetDependency */,
+				EF2B3F222BE38F8400590216 /* PBXTargetDependency */,
 			);
 			name = Application;
 			productName = Application;
@@ -432,10 +593,13 @@
 				EF2B3E932BE2E2F700590216 /* Sources */,
 				EF2B3E942BE2E2F700590216 /* Frameworks */,
 				EF2B3E952BE2E2F700590216 /* Resources */,
+				EF2B3F362BE38FEB00590216 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EF2B3F352BE38FEB00590216 /* PBXTargetDependency */,
+				EF2B3F422BE39E9F00590216 /* PBXTargetDependency */,
 			);
 			name = ModuleA;
 			productName = ModuleA;
@@ -469,10 +633,12 @@
 				EF2B3EB62BE2E31900590216 /* Sources */,
 				EF2B3EB72BE2E31900590216 /* Frameworks */,
 				EF2B3EB82BE2E31900590216 /* Resources */,
+				EF2B3F312BE38FE800590216 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EF2B3F302BE38FE800590216 /* PBXTargetDependency */,
 			);
 			name = ModuleB;
 			productName = ModuleB;
@@ -496,6 +662,43 @@
 			name = ModuleBTests;
 			productName = ModuleBTests;
 			productReference = EF2B3EC32BE2E31A00590216 /* ModuleBTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF2B3F0D2BE38F8300590216 /* UtilitiesModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF2B3F252BE38F8400590216 /* Build configuration list for PBXNativeTarget "UtilitiesModule" */;
+			buildPhases = (
+				EF2B3F092BE38F8300590216 /* Headers */,
+				EF2B3F0A2BE38F8300590216 /* Sources */,
+				EF2B3F0B2BE38F8300590216 /* Frameworks */,
+				EF2B3F0C2BE38F8300590216 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UtilitiesModule;
+			productName = UtilitiesModule;
+			productReference = EF2B3F0E2BE38F8300590216 /* UtilitiesModule.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EF2B3F162BE38F8400590216 /* UtilitiesModuleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF2B3F282BE38F8400590216 /* Build configuration list for PBXNativeTarget "UtilitiesModuleTests" */;
+			buildPhases = (
+				EF2B3F132BE38F8400590216 /* Sources */,
+				EF2B3F142BE38F8400590216 /* Frameworks */,
+				EF2B3F152BE38F8400590216 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF2B3F1A2BE38F8400590216 /* PBXTargetDependency */,
+				EF2B3F1C2BE38F8400590216 /* PBXTargetDependency */,
+			);
+			name = UtilitiesModuleTests;
+			productName = UtilitiesModuleTests;
+			productReference = EF2B3F172BE38F8400590216 /* UtilitiesModuleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -533,6 +736,13 @@
 						CreatedOnToolsVersion = 15.2;
 						TestTargetID = EF2B3E5B2BE2E1F200590216;
 					};
+					EF2B3F0D2BE38F8300590216 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					EF2B3F162BE38F8400590216 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = EF2B3E5B2BE2E1F200590216;
+					};
 				};
 			};
 			buildConfigurationList = EF2B3E572BE2E1F200590216 /* Build configuration list for PBXProject "Application" */;
@@ -555,6 +765,8 @@
 				EF2B3E9F2BE2E2F800590216 /* ModuleATests */,
 				EF2B3EB92BE2E31900590216 /* ModuleB */,
 				EF2B3EC22BE2E31A00590216 /* ModuleBTests */,
+				EF2B3F0D2BE38F8300590216 /* UtilitiesModule */,
+				EF2B3F162BE38F8400590216 /* UtilitiesModuleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -615,6 +827,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF2B3F0C2BE38F8300590216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF2B3F152BE38F8400590216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -656,7 +882,6 @@
 				EF2B3EDD2BE2E84000590216 /* Presenter.swift in Sources */,
 				EF2B3EE32BE2EBFE00590216 /* ListingViewController.swift in Sources */,
 				EF2B3E9B2BE2E2F700590216 /* ModuleA.docc in Sources */,
-				EF2B3EE12BE2E91600590216 /* University.swift in Sources */,
 				EF2B3EF02BE2F7AD00590216 /* Constants.swift in Sources */,
 				EF2B3EF32BE3005000590216 /* UniversityModel.xcdatamodeld in Sources */,
 				EF2B3EF52BE311EA00590216 /* CoreDataManager.swift in Sources */,
@@ -677,6 +902,10 @@
 			files = (
 				EF2B3EBE2BE2E31A00590216 /* ModuleB.docc in Sources */,
 				EF2B3EFE2BE37D2100590216 /* DetailsViewController.swift in Sources */,
+				EF2B3F022BE3865A00590216 /* View.swift in Sources */,
+				EF2B3F3A2BE392A200590216 /* Constants.swift in Sources */,
+				EF2B3F082BE3868A00590216 /* Router.swift in Sources */,
+				EF2B3F062BE3867700590216 /* Presenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,6 +914,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF2B3ECB2BE2E31A00590216 /* ModuleBTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF2B3F0A2BE38F8300590216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF2B3F122BE38F8300590216 /* UtilitiesModule.docc in Sources */,
+				EF2B3F3E2BE398A900590216 /* RoundedShadow.swift in Sources */,
+				EF2B3F3C2BE3931C00590216 /* UIViewController+Create.swift in Sources */,
+				EF2B3F382BE390A900590216 /* University.swift in Sources */,
+				EF2B3F442BE39FC700590216 /* UIViewController+TopViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF2B3F132BE38F8400590216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF2B3F1F2BE38F8400590216 /* UtilitiesModuleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -730,6 +979,36 @@
 			isa = PBXTargetDependency;
 			target = EF2B3EB92BE2E31900590216 /* ModuleB */;
 			targetProxy = EF2B3ECD2BE2E31A00590216 /* PBXContainerItemProxy */;
+		};
+		EF2B3F1A2BE38F8400590216 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF2B3F0D2BE38F8300590216 /* UtilitiesModule */;
+			targetProxy = EF2B3F192BE38F8400590216 /* PBXContainerItemProxy */;
+		};
+		EF2B3F1C2BE38F8400590216 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF2B3E5B2BE2E1F200590216 /* Application */;
+			targetProxy = EF2B3F1B2BE38F8400590216 /* PBXContainerItemProxy */;
+		};
+		EF2B3F222BE38F8400590216 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF2B3F0D2BE38F8300590216 /* UtilitiesModule */;
+			targetProxy = EF2B3F212BE38F8400590216 /* PBXContainerItemProxy */;
+		};
+		EF2B3F302BE38FE800590216 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF2B3F0D2BE38F8300590216 /* UtilitiesModule */;
+			targetProxy = EF2B3F2F2BE38FE800590216 /* PBXContainerItemProxy */;
+		};
+		EF2B3F352BE38FEB00590216 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF2B3F0D2BE38F8300590216 /* UtilitiesModule */;
+			targetProxy = EF2B3F342BE38FEB00590216 /* PBXContainerItemProxy */;
+		};
+		EF2B3F422BE39E9F00590216 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF2B3EB92BE2E31900590216 /* ModuleB */;
+			targetProxy = EF2B3F412BE39E9F00590216 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1210,6 +1489,108 @@
 			};
 			name = Release;
 		};
+		EF2B3F262BE38F8400590216 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XVPZ66P689;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Yasser.UtilitiesModule;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EF2B3F272BE38F8400590216 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XVPZ66P689;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Yasser.UtilitiesModule;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EF2B3F292BE38F8400590216 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XVPZ66P689;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Yasser.UtilitiesModuleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Application.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Application";
+			};
+			name = Debug;
+		};
+		EF2B3F2A2BE38F8400590216 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XVPZ66P689;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Yasser.UtilitiesModuleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Application.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Application";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1281,6 +1662,24 @@
 			buildConfigurations = (
 				EF2B3ED52BE2E31A00590216 /* Debug */,
 				EF2B3ED62BE2E31A00590216 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF2B3F252BE38F8400590216 /* Build configuration list for PBXNativeTarget "UtilitiesModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF2B3F262BE38F8400590216 /* Debug */,
+				EF2B3F272BE38F8400590216 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF2B3F282BE38F8400590216 /* Build configuration list for PBXNativeTarget "UtilitiesModuleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF2B3F292BE38F8400590216 /* Debug */,
+				EF2B3F2A2BE38F8400590216 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

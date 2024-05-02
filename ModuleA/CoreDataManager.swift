@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreData
+import UtilitiesModule
 
 class CoreDataManager {
     typealias SaveCompletionBlock = (Bool) -> Void
