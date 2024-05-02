@@ -9,18 +9,21 @@ import UIKit
 import UtilitiesModule
 
 class DetailsViewController: UIViewController, ModuleBViewProtocol {
-    var presenter: ModuleBPresenterProtocol?
-    var university: University?
-
+    // MARK:- Outlets
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var state: UILabel!
     @IBOutlet weak var country: UILabel!
     @IBOutlet weak var code: UILabel!
     @IBOutlet weak var webPage: UILabel!
     @IBOutlet weak var stateLabelHeight: NSLayoutConstraint!
-    
     @IBOutlet weak var codeToStateConstraint: NSLayoutConstraint!
     @IBOutlet weak var countryToStateConstaint: NSLayoutConstraint!
+
+    // MARK:- Properties
+    var presenter: ModuleBPresenterProtocol?
+    var university: University?
+
+    // MARK:- Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.viewDidLoad()
@@ -28,6 +31,7 @@ class DetailsViewController: UIViewController, ModuleBViewProtocol {
         name.numberOfLines = 0
     }
 
+    // MARK:- Methods
     class func create(university: University?) -> DetailsViewController {
         let detailsViewController = DetailsViewController.create(
             storyboardName: Storyboards.detailsViewController,
@@ -54,6 +58,7 @@ class DetailsViewController: UIViewController, ModuleBViewProtocol {
         webPage.text = "\(university.webPages.joined(separator: "\n"))"
     }
 
+    // MARK:- Actions
     @IBAction func refreshButtomPressed(_ sender: UIButton) {
         presenter?.dismissDetailsScreeen()
     }

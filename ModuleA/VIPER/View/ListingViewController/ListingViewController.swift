@@ -9,11 +9,12 @@ import UIKit
 import UtilitiesModule
 
 class ListingViewController: UIViewController, ModuleAViewProtocol {
-    
+    // MARK:- Outlets
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var tableViewContainer: RoundedShadowView!
     @IBOutlet weak var errorView: UIView!
 
+    // MARK:- Properties
     var universities: [University] = []
     var presenter: ModuleAPresenterProtocol?
 
@@ -27,11 +28,13 @@ class ListingViewController: UIViewController, ModuleAViewProtocol {
         tableView.delegate = self
     }
 
+    // MARK:- Life Cycle
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         presenter?.fetchUniversitiesData()
     }
 
+    // MARK:- Methods
     class func create() -> ListingViewController {
         let listingViewController = ListingViewController.create(
             storyboardName: Storyboards.listingViewController,
@@ -61,6 +64,7 @@ class ListingViewController: UIViewController, ModuleAViewProtocol {
     }
 }
 
+// MARK:- UITableViewDelegate & UITableViewDataSource
 extension ListingViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return universities.count
