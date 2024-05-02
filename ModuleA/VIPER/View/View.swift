@@ -11,5 +11,5 @@ import UtilitiesModule
 protocol ModuleAViewProtocol: AnyObject {
     var presenter: ModuleAPresenterProtocol? {get set}
     func showUniversities(_ university: [University])
-    func showError(message: String)
+    func showError()
 }

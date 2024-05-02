@@ -15,7 +15,7 @@ protocol ModuleAPresenterProtocol: AnyObject {
     
     func itemSelected(at index: Int)
     func showUniversities(_ universities: [University])
-    func showError(message: String)
+    func showError()
     func fetchUniversitiesData()
 }
 
@@ -37,7 +37,7 @@ class ModuleAPresenter: ModuleAPresenterProtocol {
         view?.showUniversities(universities)
     }
 
-    func showError(message: String) {
-        view?.showError(message: message)
+    func showError() {
+        view?.showError()
     }
 }

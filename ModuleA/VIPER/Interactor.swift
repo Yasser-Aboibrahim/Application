@@ -36,7 +36,7 @@ class ModuleAInteractor: ModuleAInteractorProtocol {
                     self.presenter?.showUniversities(universities)
                     self.universities = universities
                 } else {
-                    self.presenter?.showError(message: error.localizedDescription)
+                    self.presenter?.showError()
                 }
             }
         }

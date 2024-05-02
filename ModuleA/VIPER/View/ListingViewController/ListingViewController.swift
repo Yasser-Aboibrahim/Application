@@ -50,7 +50,7 @@ class ListingViewController: UIViewController, ModuleAViewProtocol {
         }
     }
 
-    func showError(message: String) {
+    func showError() {
         DispatchQueue.main.async {
             self.errorView.isHidden = false
             self.tableViewContainer.isHidden = true
