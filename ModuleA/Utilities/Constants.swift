@@ -21,5 +21,5 @@ struct ViewControllers {
 
 struct CoreDataMessages {
     static let coreDataModelSetupError = "Cannot setup ModelURL For CoreData"
-    static let resourceName = "SecLibDB"
+    static let resourceName = "UniversityModel"
 }
