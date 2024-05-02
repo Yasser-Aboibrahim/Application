@@ -37,6 +37,7 @@ class CoreDataManager {
 
         return container
     }()
+
     lazy var backgroundContext: NSManagedObjectContext = {
         let context: NSManagedObjectContext!
         context = self.persistentContainer.newBackgroundContext()

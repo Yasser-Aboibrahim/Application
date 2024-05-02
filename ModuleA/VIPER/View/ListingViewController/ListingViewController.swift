@@ -11,7 +11,6 @@ import UtilitiesModule
 class ListingViewController: UIViewController, ModuleAViewProtocol {
     
     @IBOutlet weak var tableView: UITableView!
-
     @IBOutlet weak var tableViewContainer: RoundedShadowView!
     @IBOutlet weak var errorView: UIView!
 
