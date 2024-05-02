@@ -54,6 +54,7 @@ class DetailsViewController: UIViewController, ModuleBViewProtocol {
             codeToStateConstraint.constant = 0
         } else {
             state.text = university.stateProvince
+            stateLabelHeight.constant = 40
         }
         country.text = university.country
         code.text = university.alphaTwoCode
